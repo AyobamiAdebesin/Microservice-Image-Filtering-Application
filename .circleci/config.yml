@@ -35,7 +35,7 @@ jobs:
             echo "-------------- Pushing images to dockerhub-------"
             docker push ayobamiadebesin/udagram-api-feed:v2
             docker push ayobamiadebesin/udagram-api-user:v2
-            docker push ayobamiadebesin/udagram-frontend:v2
+            docker push ayobamiadebesin/udagram-frontend:v3
             docker push ayobamiadebesin/udagram-reverseproxy:v2
 workflows:
   default:

@@ -26,7 +26,7 @@ jobs:
             docker tag udagram-api-user ayobamiadebesin/udagram-api-user:v1
             
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend ayobamiadebesin/udagram-frontend:v1
+            docker tag udagram-frontend ayobamiadebesin/udagram-frontend:v2
             docker build -t udagram-reverseproxy ./udagram-reverseproxy
             docker tag udagram-reverseproxy ayobamiadebesin/udagram-reverseproxy:v1
             echo "-------- All images succesfully built----------"
@@ -35,7 +35,7 @@ jobs:
             echo "-------------- Pushing images to dockerhub-------"
             docker push ayobamiadebesin/udagram-api-feed:v1
             docker push ayobamiadebesin/udagram-api-user:v1
-            docker push ayobamiadebesin/udagram-frontend:v1
+            docker push ayobamiadebesin/udagram-frontend:v2
             docker push ayobamiadebesin/udagram-reverseproxy:v1
 workflows:
   default:

@@ -42,4 +42,4 @@ venv/
 !.elasticbeanstalk/*.global.yml
 *set_env
 set_env.sh
-deployment
+deployment/
